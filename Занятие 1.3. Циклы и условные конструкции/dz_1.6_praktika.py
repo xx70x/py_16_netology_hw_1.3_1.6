@@ -154,20 +154,20 @@ def best_student(students_list):
     print('Лучший студент: {}   с интегральной оценкой {}'.format(best_stud, best_score))
 
 
-def best_students(students_list):
-    """Лучшие студенты  с интегральной оценкой """
-    best_score = 0
-    best_stud = ''
-    best_list = []
-    for student in students_list:
-        best_stud_score_home = sum(student['дз']) / len(student['дз'])
-        best_stud_score_exam = sum(student['экзамен'])
-        integr = 0.6 * best_stud_score_home + 0.4 * best_stud_score_exam
-        best_stud = '{имя} {фамилия}'.format(best_stud, **student)
-        # best_list.append((integr, best_stud))
-        if len(best_stud) > 1 and integr > best_score:
-            best_list.append((integr, best_stud))
-            print('Лучшие студенты: {}   с интегральной оценкой {}'.format(best_stud, best_score))
+# def best_students(students_list):
+#     """Лучшие студенты  с интегральной оценкой """
+#     best_score = 0
+#     best_stud = ''
+#     best_list = []
+#     for student in students_list:
+#         best_stud_score_home = sum(student['дз']) / len(student['дз'])
+#         best_stud_score_exam = sum(student['экзамен'])
+#         integr = 0.6 * best_stud_score_home + 0.4 * best_stud_score_exam
+#         best_stud = '{имя} {фамилия}'.format(best_stud, **student)
+#         # best_list.append((integr, best_stud))
+#         if len(best_stud) > 1 and integr > best_score:
+#             best_list.append((integr, best_stud))
+#             print('Лучшие студенты: {}   с интегральной оценкой {}'.format(best_stud, best_score))
 
         # Исправить
 
