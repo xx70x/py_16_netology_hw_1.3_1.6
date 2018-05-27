@@ -69,6 +69,8 @@ def enter_doc_number():
 def enter_add_doc():
     return input('\nВведите тип документа: '), input('Введите номер документа:'), input('Введите имя: '), \
            input('Введите номер полки (1,2,3): ')
+
+
 # Хотел вернуть несколько значений, но фокус не удался. :-) Не хватило знаний. Пришлось функцию не использовать.
 # add_type, add_number, add_name, shelf_number
 
@@ -125,6 +127,7 @@ def run():
             break
         else:
             print('\n Не попали по кнопке. Цельтесь лучше!')
+
 
 # print(help(ls))
 run()
